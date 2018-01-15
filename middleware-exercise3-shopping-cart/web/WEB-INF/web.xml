@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>LoadItemsServlet</servlet-name>
+        <servlet-class>com.servlets.LoadItemsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CartServlet</servlet-name>
+        <servlet-class>com.servlets.CartServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CheckoutPageServlet</servlet-name>
+        <servlet-class>com.servlets.CheckoutPageServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CheckoutServlet</servlet-name>
+        <servlet-class>com.servlets.CheckoutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HomepageServlet</servlet-name>
+        <servlet-class>com.servlets.HomepageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoadItemsServlet</servlet-name>
+        <url-pattern>/loadItems</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CartServlet</servlet-name>
+        <url-pattern>/addToCart</url-pattern>
+        <url-pattern>/deleteFromCart</url-pattern>
+        <url-pattern>/getItemsQuantity</url-pattern>
+        <url-pattern>/loadItemsFromCart</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CheckoutPageServlet</servlet-name>
+        <url-pattern>/checkoutPage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CheckoutServlet</servlet-name>
+        <url-pattern>/checkout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HomepageServlet</servlet-name>
+        <url-pattern>/continue</url-pattern>
+    </servlet-mapping>
+</web-app>

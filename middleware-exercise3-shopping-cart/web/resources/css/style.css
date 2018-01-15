@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+}
+header, footer {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+}
+footer {
+    position: absolute;
+}
+ul {
+    list-style-type: none;
+}
+ul li {
+    display: inline;
+}
+img {
+    width: 100px;
+    height: 150px;
+}
+ul li div {
+    display: inline-block;
+}
+ul li div > * {
+    display: block;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    margin: 1em auto;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
